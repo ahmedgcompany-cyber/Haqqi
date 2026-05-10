@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Building2, Calculator, FileSpreadsheet, LayoutDashboard, ShieldCheck, Users, Wallet } from "lucide-react";
+import { Building2, Calculator, FileSpreadsheet, LayoutDashboard, Mail, ShieldCheck, Users, Wallet } from "lucide-react";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { useLocale } from "@/components/providers/locale-provider";
@@ -69,6 +69,11 @@ export function MainShell({ children }: { children: React.ReactNode }) {
       href: localeHref(locale, "/settlements"),
       label: copy(locale, "Settlements", "التسويات"),
       icon: <Wallet className={navIconClassName} />,
+    },
+    {
+      href: localeHref(locale, "/contact"),
+      label: copy(locale, "Contact", "تواصل"),
+      icon: <Mail className={navIconClassName} />,
     },
   ];
 
