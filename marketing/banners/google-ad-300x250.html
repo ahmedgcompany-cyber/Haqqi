@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haqqi Google Ad 300x250</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/brand.css" />
+  <style>
+    body { display:grid; place-items:center; min-height:100vh; margin:0; }
+    /* Medium Rectangle: 300×250 — logo + headline + Arabic sub + CTA */
+    .ad { width:300px; height:250px; padding:20px; display:grid; grid-template-rows:auto 1fr auto; overflow:hidden; }
+    /* Fixed headline to prevent clamp() vw expansion in small container */
+    .ad .headline { margin:0; font-size:28px; line-height:1.05; }
+    .sub { margin:10px 0 0; color:#dce8f4; font-size:13px; line-height:1.4; direction:rtl; text-align:right; }
+    .ad .cta-button { font-size:14px; padding:11px 18px; }
+  </style>
+</head>
+<body>
+  <section class="ad canvas noise">
+    <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+    <div>
+      <h1 class="headline">Stay compliant. Pay fairly.</h1>
+      <p class="sub ar">حماية الأجور ومكافأة نهاية الخدمة في منصة واحدة.</p>
+    </div>
+    <a class="cta-button" href="#" style="justify-self:start; padding:12px 18px;">Start Trial</a>
+  </section>
+</body>
+</html>

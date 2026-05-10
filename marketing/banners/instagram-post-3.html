@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haqqi Instagram Post 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/brand.css" />
+  <style>
+    body { display:grid; place-items:center; min-height:100vh; margin:0; }
+    .post { width:1080px; height:1080px; padding:62px; display:grid; grid-template-rows:auto 1fr auto; overflow:hidden; }
+    .center { display:grid; align-content:center; gap:22px; }
+    /* Reduced from 100px to prevent 3+ line wrapping that overflows the 1fr area */
+    .post .headline { font-size:84px; max-width:800px; line-height:0.98; }
+    .post .arabic-display { font-size:32px; line-height:1.3; }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .feature-card { padding:24px; }
+    .num { font-size:20px; color:#f5ddaa; letter-spacing:.1em; margin-bottom:6px; }
+  </style>
+</head>
+<body>
+  <section class="post canvas noise">
+    <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+    <div class="center">
+      <span class="gold-pill">Trusted, simple, audit-ready</span>
+      <h1 class="headline">Protect the business. Respect the employee.</h1>
+      <p class="arabic-display ar">حقي يجعل الامتثال أكثر دقة، ويمنح فرق العمل ثقة كاملة في كل مستحق.</p>
+      <div class="cards">
+        <div class="feature-card"><div class="num">01</div><strong>Reduce payroll disputes</strong><p>Clear calculations and downloadable records.</p></div>
+        <div class="feature-card"><div class="num">02</div><strong>Stay inspection-ready</strong><p>Organize WPS, gratuity, and exit files in one system.</p></div>
+      </div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span>For GCC small & medium businesses</span>
+      <a class="cta-button" href="#">Request a walkthrough</a>
+    </div>
+  </section>
+</body>
+</html>

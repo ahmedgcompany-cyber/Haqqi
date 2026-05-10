@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haqqi Instagram Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/brand.css" />
+  <style>
+    body { display:grid; place-items:center; min-height:100vh; margin:0; }
+    /* Story: 1080×1920 — tall format with plenty of height */
+    .story { width:1080px; height:1920px; padding:80px; display:grid; grid-template-rows:auto 1fr auto; overflow:hidden; }
+    /* Reduced from 118px — still large but prevents 3-line wrapping spilling the middle section */
+    .story .headline { font-size:100px; max-width:880px; line-height:1.0; }
+    .story .arabic-display { font-size:34px; line-height:1.35; }
+    .middle { display:grid; align-content:center; gap:28px; }
+    .rail { display:grid; gap:18px; }
+    .rail .feature-card { padding:26px 30px; }
+    .rail strong { font-size:30px; display:block; }
+  </style>
+</head>
+<body>
+  <section class="story canvas noise">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+      <span class="gold-pill">Swipe for demo</span>
+    </div>
+    <div class="middle">
+      <span class="gold-pill">Launching for GCC SMBs</span>
+      <h1 class="headline">Compliance should not slow growth.</h1>
+      <p class="arabic-display ar">إدارة حماية الأجور، مكافأة نهاية الخدمة، وتسويات الخروج في دقائق بدل ساعات.</p>
+      <div class="rail">
+        <div class="feature-card"><strong>WPS validation</strong><span>Catch errors before submission.</span></div>
+        <div class="feature-card"><strong>Smart gratuity engine</strong><span>Generate consistent calculations instantly.</span></div>
+        <div class="feature-card"><strong>Settlement summaries</strong><span>Produce clear, branded, shareable documents.</span></div>
+      </div>
+    </div>
+    <div style="display:grid; gap:18px;">
+      <a class="cta-button" href="#">Book a live demo</a>
+      <span style="color:#cfe0ef;">حقي | Simple HR compliance for growing companies</span>
+    </div>
+  </section>
+</body>
+</html>

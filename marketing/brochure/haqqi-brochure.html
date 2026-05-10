@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haqqi Brochure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/brand.css" />
+  <style>
+    body { padding:20px 0; }
+    .print-page { box-shadow: 0 20px 70px rgba(0,0,0,.08); }
+    .page-inner { padding:24mm 22mm; height:100%; position:relative; }
+    .cover { background: var(--gradient); color: white; }
+    .cover .page-inner, .back .page-inner { display:flex; flex-direction:column; justify-content:space-between; }
+    .cover h1 { font-size:62px; line-height:.95; margin:0; max-width:130mm; }
+    .cover p { margin:0; font-size:20px; line-height:1.6; max-width:120mm; color:#dce8f4; }
+    .page-num { position:absolute; bottom:12mm; right:18mm; color:#8ea4be; font-size:12px; }
+    .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:14mm; }
+    .box { border:1px solid rgba(30,58,95,.10); border-radius:18px; padding:18px; background:#fff; }
+    .box h3 { margin:0 0 8px; color:var(--deep-blue); }
+    .kpi { display:grid; grid-template-columns: repeat(3,1fr); gap:10px; margin-top:18px; }
+    .kpi .box { background:#f7fafc; }
+    .timeline { display:grid; gap:10px; margin-top:16px; }
+    .timeline .box { display:grid; grid-template-columns: 70px 1fr; align-items:start; gap:14px; }
+    .price-wrap { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:16px; }
+    .price-card { padding:22px; background:#fff; border:1px solid rgba(30,58,95,.12); border-radius:22px; color:var(--ink); }
+    .price-card.featured { background:var(--gradient); color:#fff; }
+    .quote-card { padding:18px; background:#f8fbfd; border:1px solid rgba(30,58,95,.1); color:var(--ink); }
+    .footer-bar { display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(30,58,95,.12); padding-top:14px; margin-top:18px; }
+    ul { padding-left:18px; }
+    .ar-list { padding-right:18px; padding-left:0; }
+  </style>
+</head>
+<body>
+  <section class="print-page cover">
+    <div class="page-inner noise">
+      <div>
+        <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+        <div style="margin-top:22mm;">
+          <span class="gold-pill">Bilingual Launch Brochure</span>
+          <h1>Compliance clarity for every payroll cycle.</h1>
+          <p>Haqqi helps GCC small and medium businesses manage WPS compliance, end-of-service gratuity, and employee termination settlements with confidence.</p>
+          <p class="ar arabic-display" style="margin-top:14mm; color:#f5ddaa; max-width:120mm;">حقي منصة متخصصة تساعد الشركات الصغيرة والمتوسطة في الخليج على إدارة حماية الأجور ومكافأة نهاية الخدمة وتسويات إنهاء الخدمة بدقة ووضوح.</p>
+        </div>
+      </div>
+      <div class="footer-bar" style="border-top-color:rgba(255,255,255,.16); color:#dce8f4;">
+        <span>haqqi.app</span>
+        <span>Launch-ready marketing brochure</span>
+      </div>
+      <span class="page-num">01</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">Company Overview</h2>
+      <p class="section-copy">Haqqi is a micro-SaaS platform designed for GCC businesses that need dependable payroll compliance and employee-rights calculations without enterprise complexity. It replaces spreadsheet-based workflows with a guided, auditable system that operations, HR, finance, and founders can trust.</p>
+      <div class="grid-2" style="margin-top:18px;">
+        <div class="box">
+          <h3>What Haqqi delivers</h3>
+          <ul>
+            <li>WPS submission readiness and validation</li>
+            <li>End-of-service gratuity calculations with transparent logic</li>
+            <li>Termination settlement workflows and downloadable summaries</li>
+            <li>Documented records for internal review and external audits</li>
+          </ul>
+        </div>
+        <div class="box ar">
+          <h3>ما الذي يقدمه حقي</h3>
+          <ul class="ar-list">
+            <li>التحقق من جاهزية ملفات حماية الأجور قبل الرفع</li>
+            <li>احتساب مكافأة نهاية الخدمة بمنهجية واضحة وموثقة</li>
+            <li>إدارة تسويات إنهاء الخدمة وإصدار ملخصات جاهزة</li>
+            <li>سجلات منظمة للمراجعة الداخلية والامتثال الخارجي</li>
+          </ul>
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="box"><strong style="font-size:34px; color:var(--deep-blue);">1</strong><p>Unified compliance workspace</p></div>
+        <div class="box"><strong style="font-size:34px; color:var(--deep-blue);">3</strong><p>Core workflows managed in one platform</p></div>
+        <div class="box"><strong style="font-size:34px; color:var(--deep-blue);">24/7</strong><p>Always-accessible records and reports</p></div>
+      </div>
+      <span class="page-num">02</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">The Problem We Solve</h2>
+      <div class="grid-2" style="align-items:start;">
+        <div>
+          <p class="section-copy">Many SMBs in the GCC manage payroll compliance and employee settlements through disconnected spreadsheets, calculators, and manual approvals. This creates risk at exactly the moments when accuracy matters most.</p>
+          <div class="timeline">
+            <div class="box"><strong>Payroll deadlines</strong><span>Teams rush to validate data before WPS submissions.</span></div>
+            <div class="box"><strong>Employee exits</strong><span>Finance and HR reconcile gratuity and notice pay manually.</span></div>
+            <div class="box"><strong>Audits or disputes</strong><span>Supporting documents are scattered across files and inboxes.</span></div>
+          </div>
+        </div>
+        <div class="box ar">
+          <h3>التحديات اليومية</h3>
+          <p>تواجه الشركات الصغيرة والمتوسطة ضغطاً كبيراً عند معالجة الرواتب، واحتساب المستحقات، وتسوية إنهاء العقود باستخدام أدوات متفرقة وغير مترابطة.</p>
+          <ul class="ar-list">
+            <li>أخطاء محتملة في ملفات حماية الأجور</li>
+            <li>اختلافات في احتساب مكافأة نهاية الخدمة</li>
+            <li>بطء في إصدار التسويات النهائية</li>
+            <li>نقص في التوثيق عند الحاجة للمراجعة أو الاعتراض</li>
+          </ul>
+        </div>
+      </div>
+      <span class="page-num">03</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">Product Features</h2>
+      <div class="grid-2">
+        <div class="box">
+          <h3>WPS Compliance Workspace</h3>
+          <p>Review payroll data, check submission readiness, and surface issues before they become penalties or delays.</p>
+        </div>
+        <div class="box">
+          <h3>Gratuity Calculation Engine</h3>
+          <p>Apply company policy and employment terms to generate consistent, traceable end-of-service calculations.</p>
+        </div>
+        <div class="box">
+          <h3>Termination Settlement Builder</h3>
+          <p>Combine gratuity, leave balance, deductions, and notice pay into one settlement summary.</p>
+        </div>
+        <div class="box">
+          <h3>Audit-Friendly Exports</h3>
+          <p>Download summaries and records for internal approvals, employee communication, and external review.</p>
+        </div>
+      </div>
+      <div class="box ar" style="margin-top:14mm;">
+        <h3>مزايا المنصة</h3>
+        <p>يجمع حقي بين السرعة والدقة وسهولة الاستخدام، بحيث تستطيع فرق الموارد البشرية والمالية إدارة العمليات الحساسة بثقة أعلى ووقت أقل.</p>
+      </div>
+      <span class="page-num">04</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">How Haqqi Works</h2>
+      <div class="timeline">
+        <div class="box"><strong style="font-size:30px; color:var(--gold);">01</strong><div><h3>Import or enter employee payroll data</h3><p class="section-copy">Centralize salary, allowances, leave, and contract details.</p></div></div>
+        <div class="box"><strong style="font-size:30px; color:var(--gold);">02</strong><div><h3>Run compliance and gratuity logic</h3><p class="section-copy">Validate payroll requirements and calculate statutory or policy-based amounts.</p></div></div>
+        <div class="box"><strong style="font-size:30px; color:var(--gold);">03</strong><div><h3>Generate settlement output</h3><p class="section-copy">Produce a clear summary ready for review, approval, or employee communication.</p></div></div>
+        <div class="box"><strong style="font-size:30px; color:var(--gold);">04</strong><div><h3>Store records for confidence and control</h3><p class="section-copy">Keep a clean history of calculations, decisions, and final documents.</p></div></div>
+      </div>
+      <span class="page-num">05</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">Pricing</h2>
+      <p class="section-copy">Illustrative launch pricing designed for GCC SMBs. Final pricing can be adjusted before go-live.</p>
+      <div class="price-wrap">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p style="font-size:34px; font-weight:800;">SAR 199<span style="font-size:15px;">/month</span></p>
+          <ul>
+            <li>Up to 25 employees</li>
+            <li>WPS checks</li>
+            <li>Basic gratuity calculator</li>
+          </ul>
+        </div>
+        <div class="price-card featured">
+          <h3>Growth</h3>
+          <p style="font-size:34px; font-weight:800;">SAR 499<span style="font-size:15px;">/month</span></p>
+          <ul>
+            <li>Up to 150 employees</li>
+            <li>Settlement workflows</li>
+            <li>Exports and approval-ready reports</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Scale</h3>
+          <p style="font-size:34px; font-weight:800;">Custom</p>
+          <ul>
+            <li>Multi-entity support</li>
+            <li>Priority onboarding</li>
+            <li>Dedicated customer success</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box ar" style="margin-top:14mm;">
+        <h3>تسعير مرن حسب حجم الشركة</h3>
+        <p>صُمّمت الباقات لتناسب الشركات التي ترغب في البدء بسرعة ثم التوسع بثقة مع ازدياد حجم عملياتها وتعقيدها.</p>
+      </div>
+      <span class="page-num">06</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">Customer Testimonials</h2>
+      <div class="grid-2">
+        <div class="quote-card">
+          <p>“Haqqi gave us a clear process for payroll compliance and employee exits. We reduced the back-and-forth between HR and finance dramatically.”</p>
+          <strong>— Placeholder, Finance Manager, Riyadh</strong>
+        </div>
+        <div class="quote-card">
+          <p class="ar">"ساعدتنا حقي على توحيد إجراءات الرواتب والتسويات النهائية، وأصبح لدينا توثيق أوضح وسرعة أكبر في التنفيذ."</p>
+          <strong class="ar">— عميل تجريبي، مدير موارد بشرية، دبي</strong>
+        </div>
+        <div class="quote-card">
+          <p>“The gratuity calculations are easy to review, explain, and export. That saves real time every month.”</p>
+          <strong>— Placeholder, Operations Lead, Jeddah</strong>
+        </div>
+        <div class="quote-card">
+          <p class="ar">"المنصة مناسبة جداً للشركات المتوسطة التي تحتاج أداة احترافية بدون تعقيد أنظمة المؤسسات الكبيرة."</p>
+          <strong class="ar">— عميل محتمل، مدير تنفيذي، الكويت</strong>
+        </div>
+      </div>
+      <span class="page-num">07</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title">English Contact & Launch CTA</h2>
+      <div class="grid-2">
+        <div class="box">
+          <h3>Ideal for</h3>
+          <ul>
+            <li>Growing GCC SMBs</li>
+            <li>HR and finance teams needing a shared workflow</li>
+            <li>Founders seeking confidence in employee-rights calculations</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Get in touch</h3>
+          <p>Email: hello@haqqi.app</p>
+          <p>Phone: +966 50 000 0000</p>
+          <p>Website: haqqi.app</p>
+          <p>Book a demo to see a sample WPS check, gratuity calculation, and settlement summary in one session.</p>
+        </div>
+      </div>
+      <span class="page-num">08</span>
+    </div>
+  </section>
+
+  <section class="print-page">
+    <div class="page-inner">
+      <h2 class="section-title ar">التواصل والدعوة للتجربة</h2>
+      <div class="grid-2">
+        <div class="box ar">
+          <h3>الفئات المناسبة</h3>
+          <ul class="ar-list">
+            <li>الشركات الصغيرة والمتوسطة في دول الخليج</li>
+            <li>فرق الموارد البشرية والمالية التي تحتاج إلى مسار عمل موحد</li>
+            <li>الإدارات التنفيذية التي تبحث عن دقة وسرعة وتوثيق أفضل</li>
+          </ul>
+        </div>
+        <div class="box ar">
+          <h3>تواصل معنا</h3>
+          <p>البريد الإلكتروني: hello@haqqi.app</p>
+          <p>الهاتف: +966 50 000 0000</p>
+          <p>الموقع: haqqi.app</p>
+          <p>احجز عرضاً مباشراً للتعرّف على طريقة فحص ملف الرواتب، واحتساب المستحقات، وإصدار التسوية النهائية في منصة واحدة.</p>
+        </div>
+      </div>
+      <span class="page-num">09</span>
+    </div>
+  </section>
+
+  <section class="print-page back cover">
+    <div class="page-inner noise">
+      <div>
+        <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+        <h2 style="margin-top:28mm; font-size:54px; max-width:120mm;">Build trust into every payroll and exit process.</h2>
+        <p class="ar arabic-display" style="margin-top:12mm; color:#f5ddaa;">اجعل الامتثال والوضوح جزءاً أساسياً من كل دورة رواتب وكل تسوية نهائية.</p>
+      </div>
+      <div class="footer-bar" style="border-top-color:rgba(255,255,255,.16); color:#dce8f4;">
+        <span>hello@haqqi.app</span>
+        <span>حقي | Haqqi</span>
+      </div>
+      <span class="page-num">10</span>
+    </div>
+  </section>
+</body>
+</html>

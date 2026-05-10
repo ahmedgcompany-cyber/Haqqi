@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haqqi Pitch Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/brand.css" />
+  <style>
+    body { padding:24px; display:grid; gap:24px; background:#eef4f8; }
+    .slide {
+      width: 1280px;
+      min-height: 720px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 24px 70px rgba(10,30,54,.1);
+      position: relative;
+    }
+    .slide.dark { background: var(--gradient); color: white; }
+    .pad { padding: 56px 64px; height: 100%; }
+    .two { display:grid; grid-template-columns: 1fr 1fr; gap:32px; }
+    .three { display:grid; grid-template-columns: repeat(3,1fr); gap:20px; }
+    .slide h1 { margin:0; font-size:60px; line-height:1; }
+    .slide h2 { margin:0 0 12px; font-size:42px; line-height:1.05; color:inherit; }
+    .slide p, .slide li { font-size:22px; line-height:1.6; color:inherit; }
+    .tag { display:inline-flex; padding:10px 16px; border-radius:999px; background:rgba(212,168,83,.12); color:var(--gold); border:1px solid rgba(212,168,83,.25); margin-bottom:18px; font-weight:700; }
+    .card { border-radius:24px; padding:24px; background:#f8fbfd; border:1px solid rgba(30,58,95,.10); }
+    .dark .card { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.12); }
+    .mock-screen { height: 360px; border-radius: 28px; background: linear-gradient(180deg, rgba(232,244,248,.65), rgba(255,255,255,.95)); border: 1px solid rgba(30,58,95,.12); padding: 24px; display:grid; gap:18px; }
+    .dark .mock-screen { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); }
+    .bar { height:14px; width:28%; border-radius:999px; background: rgba(212,168,83,.9); }
+    .line { height:12px; border-radius:999px; background: rgba(30,58,95,.16); }
+    .dark .line { background: rgba(232,244,248,.22); }
+    .footer { position:absolute; bottom:24px; left:64px; right:64px; display:flex; justify-content:space-between; color:#88a0ba; font-size:14px; }
+    .dark .footer { color:#c9d8e8; }
+  </style>
+</head>
+<body>
+  <section class="slide dark noise"><div class="pad">
+    <div class="logo-inline"><span class="logo-mark">ح</span><span>حقي | HAQQI</span></div>
+    <div style="margin-top:90px; max-width:860px;">
+      <span class="tag">Pitch Deck</span>
+      <h1>Payroll compliance and employee settlements for GCC SMBs.</h1>
+      <p style="margin-top:20px;">Investor/client pitch deck with bilingual market context and product narrative.</p>
+      <p class="ar arabic-display" style="color:#f5ddaa; margin-top:32px;">منصة تساعد الشركات على إدارة حماية الأجور، مكافأة نهاية الخدمة، وتسويات إنهاء العقود باحترافية.</p>
+    </div>
+    <div class="footer"><span>Haqqi launch deck</span><span>01</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Problem</span><h2>SMBs handle high-risk calculations with low-confidence tools.</h2>
+    <div class="three" style="margin-top:26px;">
+      <div class="card"><h3>Spreadsheet dependency</h3><p>Manual formulas and disconnected files create inconsistency.</p></div>
+      <div class="card"><h3>Compliance pressure</h3><p>Payroll deadlines leave little room for review and validation.</p></div>
+      <div class="card"><h3>Exit complexity</h3><p>Gratuity, leave balance, deductions, and notice pay are often reconciled manually.</p></div>
+    </div>
+    <div class="footer"><span>Why now</span><span>02</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad two">
+    <div>
+      <span class="tag">Arabic insight</span>
+      <h2 class="ar">التحدي الحقيقي</h2>
+      <p class="ar">تعتمد كثير من الشركات الصغيرة والمتوسطة على ملفات متفرقة وعمليات يدوية عند معالجة الالتزام الشهري ومستحقات نهاية الخدمة.</p>
+      <p class="ar">هذا يرفع احتمالية الخطأ ويزيد وقت المراجعة والتنسيق بين المالية والموارد البشرية.</p>
+    </div>
+    <div class="card" style="align-self:center;">
+      <h3>Common pain points</h3>
+      <ul>
+        <li>Late detection of payroll issues</li>
+        <li>Unclear gratuity assumptions</li>
+        <li>Slow settlement preparation</li>
+        <li>Poor documentation during disputes</li>
+      </ul>
+    </div>
+    <div class="footer"><span>Regional context</span><span>03</span></div>
+  </div></section>
+
+  <section class="slide dark noise"><div class="pad">
+    <span class="tag">Solution</span><h2>Haqqi unifies the three workflows that matter most.</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>WPS readiness</h3><p>Surface payroll compliance issues before submission.</p></div>
+      <div class="card"><h3>Gratuity engine</h3><p>Generate consistent calculations from employee and policy data.</p></div>
+      <div class="card"><h3>Settlement builder</h3><p>Produce clear final summaries ready for sharing and approval.</p></div>
+    </div>
+    <div class="footer"><span>Core solution</span><span>04</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad two">
+    <div>
+      <span class="tag">Product demo</span><h2>Mockup: Operations dashboard</h2>
+      <p>Track payroll readiness, employee liabilities, and open settlements in one workspace.</p>
+    </div>
+    <div class="mock-screen">
+      <div class="bar"></div>
+      <div class="three">
+        <div class="card"><strong>96%</strong><p>WPS records validated</p></div>
+        <div class="card"><strong>SAR 184k</strong><p>Estimated gratuity liability</p></div>
+        <div class="card"><strong>7</strong><p>Open settlements</p></div>
+      </div>
+      <div class="line"></div><div class="line" style="width:88%;"></div><div class="line" style="width:67%;"></div>
+    </div>
+    <div class="footer"><span>Demo mockup</span><span>05</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad two">
+    <div class="mock-screen">
+      <div class="bar"></div>
+      <div class="line"></div>
+      <div class="line" style="width:82%"></div>
+      <div class="card"><h3>Gratuity Breakdown</h3><p>Base salary, service years, policy adjustments, and final amount.</p></div>
+      <div class="line" style="width:60%"></div>
+    </div>
+    <div>
+      <span class="tag">Product demo</span><h2>Mockup: Gratuity calculation</h2>
+      <p>Show the inputs behind every number so the result is easy to review and explain.</p>
+      <p class="ar">احتساب واضح يربط المدخلات بالنتيجة النهائية خطوة بخطوة.</p>
+    </div>
+    <div class="footer"><span>Transparent logic</span><span>06</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Market</span><h2>Focused wedge: GCC SMBs with growing payroll complexity.</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>TAM</h3><p>Payroll and HR compliance software spend across GCC SMEs and mid-market employers.</p></div>
+      <div class="card"><h3>SAM</h3><p>Businesses managing monthly payroll and employee exits without enterprise-grade systems.</p></div>
+      <div class="card"><h3>SOM</h3><p>Digitally active firms adopting focused workflow tools before broader HR stack upgrades.</p></div>
+    </div>
+    <div class="footer"><span>Market opportunity</span><span>07</span></div>
+  </div></section>
+
+  <section class="slide dark noise"><div class="pad">
+    <span class="tag">Why us</span><h2>Haqqi wins by being narrow, trusted, and immediately valuable.</h2>
+    <div class="three" style="margin-top:28px;">
+      <div class="card"><h3>Narrow scope</h3><p>Built around high-value compliance moments, not generic HR admin.</p></div>
+      <div class="card"><h3>Trust-first UX</h3><p>Every calculation is explainable and exportable.</p></div>
+      <div class="card"><h3>Fast onboarding</h3><p>Teams can start with core workflows instead of full-suite implementation.</p></div>
+    </div>
+    <div class="footer"><span>Positioning</span><span>08</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Business model</span><h2>Subscription SaaS with usage-based expansion.</h2>
+    <div class="two" style="margin-top:26px;">
+      <div class="card"><h3>Recurring plans</h3><p>Tiered pricing based on employee count and workflow depth.</p></div>
+      <div class="card"><h3>Expansion revenue</h3><p>Additional entities, premium support, custom export formats, and advisory onboarding.</p></div>
+    </div>
+    <div class="footer"><span>Monetization</span><span>09</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Go-to-market</span><h2>Acquire trust through practical education and direct demos.</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>Content-led</h3><p>Arabic-first compliance education on payroll and exits.</p></div>
+      <div class="card"><h3>Founder-led sales</h3><p>Direct demos to finance managers, HR leads, and SMEs.</p></div>
+      <div class="card"><h3>Partner channels</h3><p>Accounting firms and HR consultants serving SMB clients.</p></div>
+    </div>
+    <div class="footer"><span>Distribution</span><span>10</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Traction plan</span><h2>90-day launch roadmap</h2>
+    <div class="three" style="margin-top:20px;">
+      <div class="card"><h3>Days 1–30</h3><p>Launch website, publish content, onboard first design partners.</p></div>
+      <div class="card"><h3>Days 31–60</h3><p>Refine workflows, collect testimonials, activate referral outreach.</p></div>
+      <div class="card"><h3>Days 61–90</h3><p>Scale demo volume, launch paid ads, improve conversion funnels.</p></div>
+    </div>
+    <div class="footer"><span>Early traction</span><span>11</span></div>
+  </div></section>
+
+  <section class="slide dark noise"><div class="pad">
+    <span class="tag">Metrics</span><h2>What we will measure</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>Activation</h3><p>Time to first WPS validation or gratuity calculation.</p></div>
+      <div class="card"><h3>Retention</h3><p>Monthly active companies and repeat workflow usage.</p></div>
+      <div class="card"><h3>Revenue</h3><p>MRR, expansion rate, and CAC payback period.</p></div>
+    </div>
+    <div class="footer"><span>Success indicators</span><span>12</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad two">
+    <div>
+      <span class="tag">Competitive view</span><h2>Not another HR suite.</h2>
+      <p>Haqqi focuses on a narrow problem set with high urgency and clear ROI, rather than broad HR feature sprawl.</p>
+    </div>
+    <div class="card">
+      <ul>
+        <li>Faster to adopt than enterprise HR systems</li>
+        <li>More purpose-built than generic spreadsheets</li>
+        <li>More transparent than black-box payroll tools</li>
+      </ul>
+    </div>
+    <div class="footer"><span>Competitive differentiation</span><span>13</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Team</span><h2>Founding team and advisors</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>Founder / CEO</h3><p>Placeholder bio focused on payroll, finance, or SaaS execution.</p></div>
+      <div class="card"><h3>Product / Operations</h3><p>Placeholder bio focused on GCC HR operations and compliance understanding.</p></div>
+      <div class="card"><h3>Advisor network</h3><p>Placeholder compliance, legal, and SME growth advisors.</p></div>
+    </div>
+    <div class="footer"><span>Team placeholder</span><span>14</span></div>
+  </div></section>
+
+  <section class="slide dark noise"><div class="pad">
+    <span class="tag">Use cases</span><h2>Where Haqqi creates immediate value</h2>
+    <div class="three" style="margin-top:24px;">
+      <div class="card"><h3>Monthly payroll operations</h3><p>Reduce last-minute payroll anxiety.</p></div>
+      <div class="card"><h3>Employee exits</h3><p>Deliver clearer, faster, more defensible settlements.</p></div>
+      <div class="card"><h3>Internal controls</h3><p>Create a documented process between HR, finance, and leadership.</p></div>
+    </div>
+    <div class="footer"><span>Application scenarios</span><span>15</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad two">
+    <div class="card">
+      <h3>Client ask</h3>
+      <p>Book a pilot with 1–2 live workflows to validate process fit and quantify time savings.</p>
+    </div>
+    <div class="card">
+      <h3>Investor ask</h3>
+      <p>Support product refinement, early GTM, and customer acquisition for focused regional expansion.</p>
+    </div>
+    <div class="footer"><span>Primary ask</span><span>16</span></div>
+  </div></section>
+
+  <section class="slide"><div class="pad">
+    <span class="tag">Closing</span><h2>Haqqi brings confidence to the payroll moments that define trust.</h2>
+    <p style="max-width:900px;">For every employer, payroll and employee exits are more than back-office tasks — they are moments of financial accuracy, legal responsibility, and human trust. Haqqi makes those moments simpler.</p>
+    <p class="ar" style="max-width:900px;">حقي يجعل أكثر العمليات حساسية في الشركة أكثر دقة ووضوحاً، ويمنح الفرق ثقة أكبر في كل قرار.</p>
+    <div class="footer"><span>Thank you</span><span>17</span></div>
+  </div></section>
+</body>
+</html>

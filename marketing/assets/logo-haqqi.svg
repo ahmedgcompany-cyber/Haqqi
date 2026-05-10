@@ -1,0 +1,70 @@
+<svg width="620" height="180" viewBox="0 0 620 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Haqqi — حقي</title>
+
+  <!-- Background -->
+  <rect width="620" height="180" rx="24" fill="#1E3A5F"/>
+  <!-- Subtle inner border -->
+  <rect x="7" y="7" width="606" height="166" rx="18" stroke="#D4A853" stroke-width="1" stroke-opacity="0.28"/>
+
+  <!-- ══════════════════════════════════════ -->
+  <!--  ICON MARK  (90×90, centered at 90,90) -->
+  <!-- ══════════════════════════════════════ -->
+  <!-- Soft glow halo -->
+  <circle cx="90" cy="90" r="54" fill="#D4A853" fill-opacity="0.07"/>
+  <!-- Mark container -->
+  <rect x="45" y="45" width="90" height="90" rx="20" fill="#D4A853" fill-opacity="0.11" stroke="#D4A853" stroke-width="1.5" stroke-opacity="0.45"/>
+
+  <!-- Geometric H / ح letterform -->
+  <!-- Left pillar -->
+  <rect x="62" y="62" width="14" height="56" rx="7" fill="#D4A853"/>
+  <!-- Right pillar -->
+  <rect x="104" y="62" width="14" height="56" rx="7" fill="#D4A853"/>
+  <!-- Crossbar -->
+  <rect x="62" y="82" width="56" height="14" rx="7" fill="#D4A853"/>
+
+  <!-- ══════════════════════════════════════ -->
+  <!--  TEXT LOCKUP                          -->
+  <!-- ══════════════════════════════════════ -->
+
+  <!-- Arabic name: حقي -->
+  <text
+    x="174" y="82"
+    font-family="Cairo, 'Noto Naskh Arabic', Arial, sans-serif"
+    font-size="44" font-weight="800"
+    fill="#E8F4F8"
+    dominant-baseline="auto">حقي</text>
+
+  <!-- English name: HAQQI -->
+  <text
+    x="176" y="126"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-size="32" font-weight="800"
+    letter-spacing="6"
+    fill="#D4A853">HAQQI</text>
+
+  <!-- Vertical separator -->
+  <line x1="342" y1="44" x2="342" y2="136" stroke="#D4A853" stroke-width="1.5" stroke-opacity="0.32"/>
+
+  <!-- Tagline — English -->
+  <text
+    x="364" y="79"
+    font-family="Inter, Arial, sans-serif"
+    font-size="15" font-weight="600"
+    letter-spacing="0.6"
+    fill="#E8F4F8" fill-opacity="0.88">WPS · Gratuity · Settlements</text>
+
+  <!-- Tagline — Arabic -->
+  <text
+    x="364" y="103"
+    font-family="Cairo, Arial, sans-serif"
+    font-size="15" font-weight="600"
+    fill="#D4A853" fill-opacity="0.85">حماية الأجور · مكافأة نهاية الخدمة</text>
+
+  <!-- Category label -->
+  <text
+    x="364" y="126"
+    font-family="Inter, Arial, sans-serif"
+    font-size="11" font-weight="500"
+    letter-spacing="2"
+    fill="#E8F4F8" fill-opacity="0.45">GCC HR COMPLIANCE PLATFORM</text>
+</svg>

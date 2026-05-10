@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"src\\\\features\" -Recurse -Directory)",
+      "Bash(Select-Object FullName)",
+      "mcp__codebase-memory-mcp__index_repository",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:supabase.com)",
+      "Bash(git init *)"
+    ]
+  }
+}
